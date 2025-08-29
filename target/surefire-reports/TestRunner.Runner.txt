@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.793 s - in TestRunner.Runner
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 83.348 s <<< FAILURE! - in TestRunner.Runner
+TestRunner.Runner.runScenario["Successful login chrome browser", "Login"](1)  Time elapsed: 28.793 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at StepDefinition.StepDef.page_title_should_be(StepDef.java:115)
+	at ✽.Page title should be "Dashboard / nopCommerce administration"(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/LoginFeature.feature:10)
+
+TestRunner.Runner.runScenario["Successful login with valid credentials DDT", "Login"](2)  Time elapsed: 12.435 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at StepDefinition.StepDef.page_title_should_be(StepDef.java:115)
+	at ✽.Page title should be "nopCommerce demo store. Login"(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/LoginFeature.feature:18)
+
+TestRunner.Runner.runScenario["Successful login with valid credentials DDT", "Login"](3)  Time elapsed: 14.617 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at StepDefinition.StepDef.page_title_should_be(StepDef.java:115)
+	at ✽.Page title should be "nopCommerce demo store. Login"(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/LoginFeature.feature:18)
+
+TestRunner.Runner.runScenario["Successful login with valid credentials DDT", "Login"](4)  Time elapsed: 20.353 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at StepDefinition.StepDef.page_title_should_be(StepDef.java:115)
+	at ✽.Page title should be "Dashboard / nopCommerce administration"(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/LoginFeature.feature:20)
+

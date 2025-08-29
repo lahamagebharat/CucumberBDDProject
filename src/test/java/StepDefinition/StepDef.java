@@ -28,12 +28,6 @@ import io.cucumber.java.en.*;
 
 public class StepDef extends BaseClass {
 
-	@BeforeStep("@Sanity")
-	void beforeStep() {
-		System.out.println("Before Step: Executing step in the scenario.");
-
-	}
-
 	@Before()
 	public void suetp() throws IOException {
 
@@ -104,23 +98,27 @@ public class StepDef extends BaseClass {
 	}
 
 	@Then("Page title should be {string}")
-	public void page_title_should_be(String string) {
-		String expectedTitle = "Dashboard / nopCommerce administration";
-		String actualTitle = driver.getTitle();
-		if (actualTitle.equals(expectedTitle)) {
-			Assert.assertTrue(true);
-			System.out.println("Page title is as expected: " + actualTitle);
-			log.warn("**********validated**********");
-		} else {
-			Assert.assertTrue(false);
-			System.out
-					.println("Page title is not as expected. Expected: " + expectedTitle + ", but got: " + actualTitle);
-			log.fatal("**********Page title is not as expected**********");
+	public void page_title_should_be(String expectedTitle) {
+		String actualTitle=driver.getTitle();
+
+		if(actualTitle.equals(expectedTitle))
+		{
+			log.warn("Test passed: Login feature :Page title matched.");
+
+			Assert.assertTrue(true);//pass
 		}
+		else
+		{
+			Assert.assertTrue(false);//fail
+			log.warn("Test Failed: Login feature- page title not matched.");
+
+
+		}
+
 	}
 
 	@When("User clicks on logout button")
-	public void user_clicks_on_logout_button() {
+	public void user_clicks_on_logout_button() throws InterruptedException {
 		loginPage.clickonlogout();
 	}
 

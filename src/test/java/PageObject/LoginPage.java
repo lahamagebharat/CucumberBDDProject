@@ -41,8 +41,9 @@ public class LoginPage {
 		LoginButton.click();
 	}
 
-	public void clickonlogout() {
+	public void clickonlogout() throws InterruptedException {
 		LogoutButton.click();
-	}
+		Thread.sleep(4000);
+		}
 
 }
