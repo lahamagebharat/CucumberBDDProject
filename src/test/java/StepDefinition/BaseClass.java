@@ -1,7 +1,5 @@
 package StepDefinition;
 
-
-
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -15,7 +13,7 @@ import Utilities.*;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LoginPage loginPage;
 	public AddNewCustomerPage addNewCustomerPage;
 	public SearchCustomerPage searchCustomerPage;

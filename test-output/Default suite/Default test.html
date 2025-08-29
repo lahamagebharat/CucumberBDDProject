@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 29 09:20:57 IST 2025</td>
+<td>Started on:</td><td>Fri Aug 29 18:19:23 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>84 seconds (84389 ms)</td>
+<tr><td>Total time:</td><td>79 seconds (79923 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new customer", "CustomersScenario: Add new customer"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at StepDefinition.CloseStep.close_browser(CloseStep.java:9)
-	at ?.close browser(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:21)
-</pre></div><a href='#' onClick='toggleBox("stack-trace215911532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace215911532'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at StepDefinition.CloseStep.close_browser(CloseStep.java:9)
-	at ?.close browser(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:21)
-</pre></div></td>
-<td>33</td>
-<td>TestRunner.Runner@687e99d8</td></tr>
-<tr>
 <td title='TestRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search customer by name", "CustomersScenario: Add new customer"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#SearchFirstName&quot;}
   (Session info: chrome=139.0.7258.140)
@@ -95,9 +83,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6437d6cdcf26e5ca148b6074e16d3aaa, findElement {value=SearchFirstName, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.140, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61578/devtoo..., se:cdpVersion: 139.0.7258.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6437d6cdcf26e5ca148b6074e16d3aaa
+Command: [294070f32650b607d041bac66974ee86, findElement {value=SearchFirstName, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.140, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62665}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62665/devtoo..., se:cdpVersion: 139.0.7258.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 294070f32650b607d041bac66974ee86
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -118,16 +106,16 @@ Session ID: 6437d6cdcf26e5ca148b6074e16d3aaa
 	at PageObject.SearchCustomerPage.enterFirstName(SearchCustomerPage.java:85)
 	at StepDefinition.StepDef.enter_customer_name(StepDef.java:241)
 	at ?.Enter customer name(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:34)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1322354584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1322354584'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#SearchFirstName&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace971324399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace971324399'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#SearchFirstName&quot;}
   (Session info: chrome=139.0.7258.140)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6437d6cdcf26e5ca148b6074e16d3aaa, findElement {value=SearchFirstName, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.140, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61578/devtoo..., se:cdpVersion: 139.0.7258.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6437d6cdcf26e5ca148b6074e16d3aaa
+Command: [294070f32650b607d041bac66974ee86, findElement {value=SearchFirstName, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.140, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62665}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62665/devtoo..., se:cdpVersion: 139.0.7258.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 294070f32650b607d041bac66974ee86
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -149,19 +137,26 @@ Session ID: 6437d6cdcf26e5ca148b6074e16d3aaa
 	at StepDefinition.StepDef.enter_customer_name(StepDef.java:241)
 	at ?.Enter customer name(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:34)
 </pre></div></td>
-<td>22</td>
+<td>15</td>
+<td>TestRunner.Runner@687e99d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new customer", "CustomersScenario: Add new customer"</td>
+<td></td>
+<td>38</td>
 <td>TestRunner.Runner@687e99d8</td></tr>
 <tr>
 <td title='TestRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search customer by email", "CustomersScenario: Add new customer"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at StepDefinition.CloseStep.close_browser(CloseStep.java:9)
-	at ?.close browser(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:30)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1799446367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1799446367'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at StepDefinition.CloseStep.close_browser(CloseStep.java:9)
-	at ?.close browser(file:///C:/Users/HP/JavaFullStck/CucumberFramework/./Features/Customers.feature:30)
-</pre></div></td>
-<td>19</td>
+<td></td>
+<td>20</td>
 <td>TestRunner.Runner@687e99d8</td></tr>
 </table><p>
 </body>
